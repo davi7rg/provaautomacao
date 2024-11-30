@@ -1,0 +1,36 @@
+{
+  "name": "Trabalho de Recuperacao professor Samuel",
+  "author": "Davi Rodrigues Goncalves",
+  "version": "0.0.2", 
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "find:specs:name": "find-cypress-specs --names",
+    "linter:code:fix": "standard -v --fix | snazzy"
+  },
+  "standard": {
+    "globals": [
+      "Cypress",
+      "cypress",
+      "cy",
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it",
+      "expect"
+    ]
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.13.2",
+    "find-cypress-specs": "^1.44.9"
+  },
+  "devDependencies": {
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.0"
+  }
+}
